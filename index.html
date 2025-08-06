@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program sederhana</title>
+</head>
+<body>
+  <script>
+    let siswa = ["Kilua", "Liam", "Iksan", "Mail", "Jarjit"];
+    let nilai = [94, 75, 88, 40, 60];
+
+    for(let i = siswa.length-1; i >= 0; i--){
+      console.log("Nama: " + siswa[i]);
+      console.log("Nilai: " + nilai[i]);
+
+      if(nilai[i] >= 75){
+        console.log("Lulus Ujian");
+      }else {
+        console.log("Maaf Anda gagal");
+      }
+      console.log("________________")
+    }
+  </script>
+</body>
+</html>
