@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mengakses elemen html pada javascript</title>
+</head>
+<body>
+  <h2 id="judul">Selamat datang di oddo</h2>
+  <h4 class="clas-subjudul">ini subjudul</h4>
+  <p> Paragraft</p>
+  
+  <script>
+    const title = document.getElementById("judul");
+    const tag_p = document.getElementsByTagName("p")[0].textContent= "mafia";
+    const subjudul = document.getElementsByClassName(".clas-subjudul");
+
+    title.innerHTML = `<h1>Welcome to oddo</h1>`
+    tag_p.textContent = "Hai "//gagal
+  </script>
+</body>
+</html>

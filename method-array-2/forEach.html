@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForEach in Array</title>
+</head>
+<body>
+  <script>
+    // Struktur forEach(function( elemen, indeks, array|opsional))
+    let hari = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at"];
+    hari.forEach(function(name_day, i, arr){
+      document.writeln(`<h6>hari ${name_day} ${i}</h6>`);
+    });
+
+    // contoh pakai struktur yang lengkap
+    let numbers = [ 7, 9, 10, 11, 23];
+    numbers.forEach(function(num, indeks, arr){
+      console.log(`elemen ke: ${indeks} : ${num} (Array : ${arr})`);
+    })
+
+    // contoh menggunakan nama elemen yang sama dengan nama array
+    let nill = [4, 2, 5, 7, 10];
+    nill.forEach(function(nill){
+      if( nill % 2 === 0){
+        console.log(nill);
+      } else {
+        console.log("Ganjil")
+      }
+    })
+
+    // Memodifikasi data
+    let colors = [" Orange", "Red", "Blue", "Violet"];
+    let modifiedColors = [];
+    colors.forEach(function(color){
+      modifiedColors.push("Warna : " + color);
+    });
+    document.writeln(modifiedColors);
+  </script>
+</body>
+</html>

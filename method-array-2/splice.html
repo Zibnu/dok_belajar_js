@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar splice</title>
+</head>
+<body>
+  <script>
+    let buah = ["mangga", "apel", "jambu"];
+
+    // buah.splice("index yang akan dihapus", "jumlah yang akan dihapus", "item baru", "item baru"); struktur splice dalam array
+    buah.splice( 1 , 1, "Kedongdong", "Anggur");
+    console.log(buah);
+    // Jika tidak memasukan sesuai struktur
+    let mapel = ["Bahasa inggris", "PKN", "IPA"];
+    mapel.splice("PJOK");//Akan menghapus seluruh isi array
+    console.log(mapel)
+  </script>
+</body>
+</html>

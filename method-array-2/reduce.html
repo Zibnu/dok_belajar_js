@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Method Reduce</title>
+</head>
+<body>
+  <script>
+    let numbers = [5, 10, 20 ]
+    let total = numbers.reduce(function(acc , cur){
+      return acc + cur;
+    },0)
+    console.log(total)
+    let nilai = [89, 77, 88, 90, 75]
+    let sum = nilai.reduce(function(acc, cur){
+      return acc + cur // menjumlahkan seluruh nilai
+    }, 0)
+    const avr = sum / nilai.length //Lalu menghitung rata rata nilai
+    console.log(avr)
+  </script>
+</body>
+</html>

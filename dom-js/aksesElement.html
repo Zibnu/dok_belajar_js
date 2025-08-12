@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mengakses Elemen html</title>
+</head>
+<body>
+  <h1 id="judul">Internet</h1>
+  <p class="teks">Internet untuk mengakses dan menjakau seluruh informasi yang ada didunia ini dengan cepat dan mudaj</p>
+  <p class="teks">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum laborum minima laudantium porro quas commodi nihil explicabo. Illo, quo iste? Molestiae a autem nobis facilis eum cumque nemo eius quibusdam?</p>
+  <button id="tombol" onclick="ubahWarna()">Click Me</button>
+  <script>
+    const judul = document.getElementById('judul')
+    const teks1 = document.getElementsByClassName('teks')
+    const seluruhTeks = document.querySelector('.teks')
+
+    judul.innerHTML = `<i>miring</i> tanpa tambahan`
+    judul.textContent = 'Haloo'
+
+    // Mengatur atribut
+    judul.setAttribute('style', 'font-size : 100px');
+    judul.style.color = 'red'
+
+  </script>
+</body>
+</html>

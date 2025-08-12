@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Map</title>
+</head>
+<body>
+  <script>
+    const numbers = [8, 4, 5, 7];
+    let bagi = numbers.map(function(nilai){
+      return (nilai + nilai) / 4;
+      // Tadinya mau menghitung nilai rata rata
+      // Tidak bisa langsung mengalikan numbers dengan * 2, akan mengakibatkan perkalian antara array dan bilangan bulan yang akhirnya menjadi NaN
+    })
+    console.log(bagi)
+    const nama = ["kilua", "mail", "maxim", "adam"]
+    const huruf_kapital = nama.map(function(n){
+      return n.toUpperCase()
+    })
+    console.log(huruf_kapital);
+    const hari = ["senin", "selasa", "rabu", "kamis"].map(n => n.toUpperCase())
+    console.log(hari)
+  </script>
+</body>
+</html>

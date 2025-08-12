@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Replice elemen html in javacript</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="judul">Night Raid</h1>
+    </div>
+
+    <script>
+      let container = document.getElementById("container");
+
+      // Buat elemen baru
+      let paragrafBaru = document.createElement("h2");
+      paragrafBaru.textContent = "Ini paragraf baru";
+
+      // Ambil elemen lama
+      let judulLama = document.getElementById("judul");
+
+      // Ganti menggunakan replaceChild
+      container.replaceChild(paragrafBaru, judulLama);
+    </script>
+  </body>
+</html>

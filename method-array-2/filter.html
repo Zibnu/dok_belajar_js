@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Method Filter</title>
+</head>
+<body>
+  <script>
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9 ,10]
+    let genap = numbers.filter(n => n % 2 === 0);//jika bilangan 4 dibagi 2 sisa 0 maka disebut genap, 
+    console.log(genap)
+    let ganjil = numbers.filter(n => n % 2 === 1)//jika bilangan 1 dibagi dua sisa 1 maka disebut genap
+    console.log(ganjil)
+    let bilangan = [9, 15, 20, 35, 60, 40]
+    let bigBil = bilangan.filter( angka => angka > 20);//mendapatkan nilai yang lebih besar dari 20
+    console.log(bigBil)
+  </script>
+</body>
+</html>

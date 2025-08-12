@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal Percabangan</title>
+  </head>
+  <body>
+    <script>
+      // Tentukan umur dan status
+      let umur = 10;
+      let status = "pelajar";
+      if (umur <= 5) {
+        console.log("bayi");
+      } else if (umur <= 12) {
+        console.log("anak anak");
+      } else if (umur <= 18) {
+        console.log("remaja");
+      } else {
+        console.log("dewasa");
+      }
+      if (status == "pelajar") {
+        console.log("Masih bau cikur");
+      } else if (status == "Kuliah") {
+        console.log("Mahasiswa");
+      } else if (status == "Kerja") {
+        console.log("Lagi Nyari uang");
+      } else {
+        console.log("Anonymous");
+      }
+
+      // Mengecek apakah seseorang bisa menerima bantuan atau tidak
+      let umur1 = 20;
+      let stats = "Tidak bekerja";
+      let status_pernikahan = "Belum menikah";
+
+      if (
+        umur1 >= 18 &&
+        stats === "Tidak bekerja" &&
+        status_pernikahan === "Belum menikah"
+      ) {
+        console.log("Berhak menerima bantuan");
+      } else {
+        console.log("Tidak berhak menerima bantuan");
+      }
+      // Bisa menuliskan kode menjadi lebih efisien dengan cara
+      const berhak =
+        umur1 >= 18 &&
+        stats.toLowerCase() === "tidak bekerja" &&
+        status_pernikahan.toLowerCase() === "belum menikah";
+      console.log(berhak ? "Dapat Bansos" : "Beda kondisi bro");
+    </script>
+  </body>
+</html>

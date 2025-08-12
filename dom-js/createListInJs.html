@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan Makanan</title>
+</head>
+<body>
+  <h2>Buat pesanan sekarang</h2>
+  <button onclick="tambahPesanan()">Buat pesanan</button>
+  <button onclick="hapusPesan()">Hapus pesanan</button>
+
+  <script>
+    function tambahPesanan(){
+      let p = document.createElement('p')
+      p.textContent = "Kamu berhasil memesan"
+      document.body.appendChild(p)
+    }
+    function hapusPesan(){
+      
+    }
+  </script>
+</body>
+</html>

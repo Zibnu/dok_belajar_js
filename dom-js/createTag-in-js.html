@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membuat tag di javascript</title>
+</head>
+<body>
+  <div id="container"></div>
+  <header></header>
+  <script>
+    const newHeader = document.createElement('h1');
+    const judul = document.createElement('h2')
+    const subju = document.createElement('h5')
+    const parent = document.getElementById('container')
+    const head = document.querySelector('header')
+
+    judul.textContent = "Bitcoin";
+    subju.innerHTML = "Aset digital bernilai 100 dollar "
+    head.appendChild(judul)
+    head.appendChild(subju)
+  </script>
+</body>
+</html>

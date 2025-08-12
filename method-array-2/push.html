@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penggunaan push dalam Array javascript</title>
+</head>
+<body>
+  <script>
+    let buah = ["Durian", "Jambu", "Apel"];
+    buah.push("Rambutan");
+
+    
+    // let yourHobby = [];
+    // for( let i = 0; i < 3; i++){
+    //   let hobies = prompt("Masukan Hoby Kamu: ");
+    //   yourHobby.push(hobies);
+    // }
+    // console.log("Hobi kamu adalah" + yourHobby);
+
+    let animeList = ["Hunter x hunter ", "Jujutsu", "Saint seiya", "Sakamoto days"];
+    console.log("Sebelum push :" + animeList)
+    animeList.push("One piece")
+    console.log(animeList)
+
+    let history = []
+    history.push("makan");
+    history.push("Mandi")
+    history.push("Olahraga")
+    history.push('Membaca')
+    console.log(`Perjalan hidup ini dimulai dari ${history}`)
+    history.pop()
+    history.pop()
+    history.pop()
+    history.push("Begadang", "Main hp", "Ngoding samoe subuh", "Masih ngantuk cik")
+    document.writeln(`Updte my life ${history}`)
+  </script>
+</body>
+</html>

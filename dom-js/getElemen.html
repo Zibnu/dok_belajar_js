@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Dom</title>
+  <style>
+    /* button {
+      background-color: red;
+      cursor: pointer;
+    } */
+  </style>
+</head>
+<body>
+  <h1> Hallo</h1>
+  <p onclick="this.textContent = 'filra'">Malaka project</p>
+  <div> Teriakan Revolusi</div>
+  <a href="https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true" id="link"> Pindah halaman</a>
+
+  <p id="ubah">Nice</p>
+  <button onclick="tekan()">Click me</button>
+  <button class="para" onclick="this.textContent = 'after'"> ini before</button>
+
+  <script>
+    const link = document.getElementById("link");
+    const judul = document.querySelector("h1");
+    const teks = document.querySelector("p");
+    const isi = document.getElementsByTagName("div")[0].textContent = "Periode makmur";// membuat tag ini berubah menjadi array
+    const klik = document.getElementById("para");
+    const hover = document.querySelector("button");
+
+    link.attributes = "https://www.w3schools.com/js/js_htmldom_document.asp";
+
+    teks.innerHTML = "ini adalah paragraf dari js";
+    judul.innerHTML = " Welcome";
+    hover.style.cursor = "pointer";
+    hover.style.backgroundColor = "red";
+
+    function tekan(){
+      const p = document.getElementById("ubah")
+      p.innerHTML = "Good";
+    }
+
+  </script>
+</body>
+</html>

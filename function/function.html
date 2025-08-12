@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function vs prosedur</title>
+</head>
+<body>
+  <button id="tombol">Click to interection</button>
+  <script>
+    function myFungsi(){
+      return 5;
+    }
+    function myProsedur(){
+      console.log(5)
+    }
+    const a = myFungsi() + myFungsi()
+    const b = myProsedur() + myProsedur()
+    console.log(a)
+    console.log(b)
+
+    // Membuat function hitung diskon
+    function hitungDiskon(harga, dis){
+      let total_diskon = (harga * dis / 100);
+      let hargaAkhir = harga - total_diskon;
+      return hargaAkhir
+    }
+
+    console.log(hitungDiskon(50.000, 20))
+    // console.log(hitungDiskon())
+    // console.log(hitungDiskon)
+
+    // Cara pemanggilan function 
+    function sayhai(){
+      console.log("hallo ")
+    }
+    sayhai()// cara memanggil secara disebut/dipanggil nama function
+
+    function sapa(nama){
+      console.log(`hallo bro ${nama}`);
+    }
+    sapa("azmi");// memanggil memakai argumen
+
+    // memanggil pakai event
+    
+    // arrow function
+    let myFunction = (a, b) => a * b;
+    console.log(myFunction(7, 2))
+  </script>
+</body>
+</html>
