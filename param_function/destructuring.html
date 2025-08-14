@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destructuring </title>
+</head>
+<body>
+  <script>
+    // Mengambil nilai dari object atau array secara langsung
+    let person = {
+      nama : "Gojo niberu",
+      umur : 400,
+      skil : "Jadi kiko"
+    }
+    function information({nama, umur}){
+      console.log(`Nama ${nama} berumur ${umur} tahun`);
+    } 
+    information({nama :"Gojo", umur : 87});
+  </script>
+</body>
+</html>

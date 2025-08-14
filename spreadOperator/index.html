@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread Operator</title>
+  </head>
+  <body>
+    <form action="" id="container">
+      <input type="text" id="nama" />
+      <input type="number" id="kelas" />
+
+      <label for="hobi">Pilih hobi:</label>
+      <select id="hobi" name="hobi">
+        <option value="gaming">Gaming</option>
+        <option value="reading">Reading</option>
+        <option value="soccer">Soccer</option>
+        <option value="volly">Volly</option>
+      </select>
+      <button type="submit" value="kirim">Klik untuk Kirim</button>
+    </form>
+
+    <script>
+      let person = [
+        {
+          nama: "Gojo",
+          kelas: 12,
+          hobi: "Gaming",
+        },
+        {
+          nama: "Rafael",
+          kelas: 12,
+          hobi: "Meaken kejo",
+        },
+        {
+          nama: "Glen",
+          kelas: 12,
+          hobi: "Push sampai imo ",
+        },
+      ];
+      let newObject = {
+        Nama: "Fahriel",
+        kelas: 12,
+        hobi: "Meaken pangan",
+      };
+
+      const wadah = document.getElementById("container");
+      wadah.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const nama = document.getElementById("nama").value;
+        const kelas = document.getElementById("kelas").value;
+        const hobi = document.getElementById("hobi").value;
+
+        const newObj = {
+          nama: nama,
+          kelas: kelas,
+          hobi: hobi,
+        };
+
+        let newArray = [...person, newObj];
+        console.log(newArray);
+      });
+    </script>
+  </body>
+</html>

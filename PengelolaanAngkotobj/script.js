@@ -1,3 +1,4 @@
+console.log("Selamat datang")
 function Angkot(sopir, trayek, penumpang, kas) {
   this.sopir = sopir;
   this.trayek = trayek;
@@ -30,5 +31,5 @@ let angkot2 = new Angkot("Tira", ["Srikandi", "Pasar Manis"], [], 0);
 // const penumpang1 = angkot1.penumpangNaik("Caplun");
 // const penumpang2 = angkot1.penumpangNaik("Martin");
 // const turun1 = angkot1.penumpangTurun("Caplun", 5000)
-// const turun2 = angkot1.penumpangTurun("Martin", 3000)
-// console.log(angkot1.kas)
+const turun2 = angkot1.penumpangTurun("Martin", 3000)
+console.log(angkot1)

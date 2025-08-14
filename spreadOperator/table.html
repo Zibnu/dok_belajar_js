@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread Operator Table</title>
+  </head>
+  <body>
+    <form action="" id="container">
+      <input type="text" name="barang" id="barang" />
+      <input type="number" name="stock" id="stockBarang" />
+      <button type="submit" value="kirim">Kirim</button>
+    </form>
+
+    <div id="tablecontainer">
+      <table id="dataTable" border="1px">
+        <thead>
+          <tr>
+            <th>Nama Product</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <script>
+      let product = [
+        {
+          nama: "Eskrim",
+          stock: 2000,
+        },
+        {
+          nama: "bola",
+          stock: 200,
+        },
+        {
+          nama: "aqua",
+          stock: 100,
+        },
+        {
+          nama: "Minyak",
+          stock: 300,
+        },
+      ];
+      function displayData(data) {
+        const tableBody = document.getElementById("tableBody");
+        tableBody.innerHTML = "";
+
+        data.forEach(item => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+          <td>${item.nama}</td>
+          <td>${item.stock}</td>
+          `;
+          tableBody.appendChild(row);
+        });
+      }
+
+      displayData(product)
+
+      const wadah = document.getElementById("container");
+      wadah.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("barang").value;
+        const stock = document.getElementById("stockBarang").value;
+
+        const ObjBaru = {
+          nama: name,
+          stock: stock,
+        };
+
+        product = [...product, ObjBaru];
+        
+        displayData(product);
+
+        document.getElementById('barang').value = "";
+        document.getElementById('stockBarang').value = "";
+      });
+    </script>
+  </body>
+</html>

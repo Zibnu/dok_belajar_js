@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubah warna background </title>
+</head>
+<body>
+  <button id="tombol">Ubah warna</button>
+
+  <script>
+    const tombol = document.getElementById('tombol');
+    let merah = false;
+
+    tombol.addEventListener("click", function(){
+      if(merah){
+        document.body.style.backgroundColor = "white";
+        merah = false;
+      } else {
+        document.body.style.backgroundColor = "red"
+        merah = true;
+      }
+    })
+  </script>
+</body>
+</html>

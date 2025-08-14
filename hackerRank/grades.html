@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membulatkan nilai siswa</title>
+  </head>
+  <body>
+    <script>
+      function bulatkan(grades) {
+        let hasil = [];
+
+        for (let i = 0; i < grades.length; i++) {
+          let grade = grades[i];
+          if (grade >= 38) {
+            let kelipatan5 = Math.ceil(grade / 5) * 5;
+            if (kelipatan5 - grade < 3) {
+              grade = kelipatan5;
+            }
+          }
+          hasil.push(grade);
+        }
+        return hasil;
+      }
+
+      let nilaiSiswa = [82, 69 , 39, 30]
+      console.log(bulatkan(nilaiSiswa))
+    </script>
+  </body>
+</html>

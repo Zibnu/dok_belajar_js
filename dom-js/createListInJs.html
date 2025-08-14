@@ -17,7 +17,10 @@
       document.body.appendChild(p)
     }
     function hapusPesan(){
-      
+      const pesan = document.querySelector('p')
+      if(pesan){
+        pesan.remove();
+      }
     }
   </script>
 </body>

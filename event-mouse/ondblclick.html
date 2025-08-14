@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event mouse double click</title>
+</head>
+<body>
+  <h3 id="header">Click to know</h3>
+  <button id="tombol">Click</button>
+
+  <script>
+    const tombol = document.getElementById('tombol');
+    const judul = document.getElementById('header')
+    let aqua = false;
+
+    tombol.addEventListener('dblclick', function(){
+      if(aqua){
+        document.body.style.backgroundColor = 'white';
+        judul.innerHTML = "Warna Normal"
+        aqua = false;
+      }else {
+        document.body.style.backgroundColor = 'aqua'
+        judul.innerHTML = "Warna terubah"
+        aqua = true;
+      }
+    })
+  </script>
+</body>
+</html>

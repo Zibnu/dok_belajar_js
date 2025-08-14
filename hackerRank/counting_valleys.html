@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menghitung lembah </title>
+</head>
+<body>
+  <script>
+    function countingValleys(steps, path){
+      // posisi saat ini
+      //  seaLevel = 0 : dipermukaan laut
+      // seaLevel < 0 : sedang turun ke lembah
+      // seaLevel > 0 : sedang naik / berada diatas gunung
+      let seaLevel = 0;
+      // Jumlah lembah yang dilalui
+      let valleys = 0;
+
+      // Perulangan untuk mengakses string/ array dari path dimana jumlahnya == steps 
+      for(let i = 0; i < steps; i++){
+        // If (jika path berisi U maka sedang naik){ if( jika sealevel sedang naik dan nilainya 0 berarti sudah kembali)}
+        if(path[i] === "U"){
+          seaLevel++;
+          if( seaLevel === 0){
+            valleys++
+          }
+        }else {
+          // Jika isi path != u maka seaLevel -1 alias turun
+          seaLevel--;
+        }
+      }
+      return valleys;
+    }
+
+    console.log(countingValleys(8, "UDDDUDUU"))//menghasilkan 1 karna berdasarkan function diatas valleys yang dihasilkan 1
+  </script>
+</body>
+</html>

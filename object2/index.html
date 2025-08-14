@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mengakses object</title>
+</head>
+<body>
+  <script>
+    const user = {
+      nama : "Fulan",
+      kelas: 11,
+      alamat : {
+        Desa : "Bentar",
+        Kecamatan : "Salem"
+      },
+      hobi : ["Gaming", "Bisnis"]
+    }
+    console.log(user.hobi[1])
+
+    const person = [{
+      nama : "Fulan",
+      kelas: 12,
+      alamat : [{
+        desa : "x",
+        hobi: [{Makan : "Tiap Hari", tidur : "Tiap Jam"}]
+      }]
+    }]
+    const hasil = person[0].alamat[0].hobi[0].Makan
+
+    console.log(`Hobi saya makan ${hasil} `)
+  </script>
+</body>
+</html>

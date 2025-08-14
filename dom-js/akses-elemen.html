@@ -6,17 +6,16 @@
   <title>Mengakses elemen html pada javascript</title>
 </head>
 <body>
-  <h2 id="judul">Selamat datang di oddo</h2>
+  <h2 id="judul">Selamat datang di Daemon Store</h2>
   <h4 class="clas-subjudul">ini subjudul</h4>
   <p> Paragraft</p>
   
   <script>
     const title = document.getElementById("judul");
-    const tag_p = document.getElementsByTagName("p")[0].textContent= "mafia";
-    const subjudul = document.getElementsByClassName(".clas-subjudul");
+    const subjudul = document.getElementsByClassName("clas-subjudul");
 
-    title.innerHTML = `<h1>Welcome to oddo</h1>`
-    tag_p.textContent = "Hai "//gagal
+    title.innerHTML = `<h1>Welcome to Daemon Store</h1>`
+    subjudul[0].innerHTML = "Sub-bab";
   </script>
 </body>
 </html>
